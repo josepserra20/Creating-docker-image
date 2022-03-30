@@ -49,4 +49,22 @@ Al acceder a nuestro perfil web de dockerhub veremos nuestra imagen personalizad
 
 ![docker_push](/images/vpsuh.PNG)
 
+Ahora procedemos a lanzar la API en **Azure**
+
+Seleccionamos una VM de Azure. Si no tenemos ninguna creamos una eligiendo las características que más nos convengan.
+
+Empezamos descargándonos la imagen empleando el comando:
+
+``` 
+docker pull "useracc/ollivander"
+```
+
+También podemos ejecutar directamente el comando **docker run**. Si no tenemos la imagen en la máquina docker hará su magia y se descargará automáticamente.
+
+``` 
+docker run -dp 8000:8000 "useracc/ollivander"
+```
+
 ![docker_run](/images/docker-run.PNG)
+
+¡Y así hemos dockerizado nuestra app python!
