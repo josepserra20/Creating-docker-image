@@ -62,9 +62,13 @@ docker pull "useracc/ollivander"
 También podemos ejecutar directamente el comando **docker run**. Si no tenemos la imagen en la máquina docker hará su magia y se descargará automáticamente.
 
 ``` 
-docker run -dp 8000:8000 "useracc/ollivander"
+docker run -dp 5000:5000 "useracc/ollivander"
 ```
 
 ![docker_run](/images/docker-run.PNG)
+
+Vemos el resultado 
+
+![salida](images/salida.PNG)
 
 ¡Y así hemos dockerizado nuestra app python!
